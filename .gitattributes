@@ -1,80 +1,11 @@
+# Line endings
 /mvnw text eol=lf
+*.sh text eol=lf
 *.cmd text eol=crlf
-##################################
-# Java / Spring Boot
-##################################
-target/
-out/
-*.class
-*.log
 
-##################################
-# Maven / Gradle
-##################################
-.mvn/wrapper/maven-wrapper.jar
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
-
-##################################
-# Application Secrets & Config
-##################################
-.env
-.env.*
-application-local.yml
-application-local.properties
-application-dev.yml
-application-dev.properties
-application-prod.yml
-application-prod.properties
-
-##################################
-# Database
-##################################
-*.db
-*.sqlite
-*.sqlite3
-data/
-db-data/
-
-##################################
-# Security (keys, certs, tokens)
-##################################
-*.pem
-*.key
-*.crt
-*.keystore
-*.jks
-*.p12
-
-##################################
-# Logs
-##################################
-logs/
-*.log
-
-##################################
-# IDEs
-##################################
-# IntelliJ IDEA
-.idea/
-*.iml
-
-# Eclipse / STS
-.project
-.classpath
-.settings/
-
-# VS Code
-.vscode/
-
-##################################
-# OS Files
-##################################
-.DS_Store
-Thumbs.db
-
-##################################
-# Docker
-##################################
-docker-data/
+# Java source files
+*.java text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.properties text eol=lf
