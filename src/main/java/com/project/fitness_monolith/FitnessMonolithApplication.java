@@ -14,3 +14,5 @@ public class FitnessMonolithApplication {
 	}
 
 }
+
+// 7: 48

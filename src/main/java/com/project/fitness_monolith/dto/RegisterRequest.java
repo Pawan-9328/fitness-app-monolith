@@ -1,6 +1,7 @@
 package com.project.fitness_monolith.dto;
 
 
+import com.project.fitness_monolith.Model.UserRole;
 import lombok.*;
 
 @Data
@@ -12,6 +13,7 @@ public class RegisterRequest {
     private String password;
     private String firstName;
     private String lastName;
+    private UserRole role;
 
 
 }
