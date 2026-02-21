@@ -8,7 +8,6 @@ import com.project.fitness_monolith.dto.ActivityResponse;
 import com.project.fitness_monolith.repository.ActivityRepository;
 import com.project.fitness_monolith.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

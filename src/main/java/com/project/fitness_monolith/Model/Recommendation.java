@@ -3,7 +3,10 @@ package com.project.fitness_monolith.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.type.SqlTypes;
 
 import javax.swing.*;
@@ -11,6 +14,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
+@Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Recommendation {
 
     @Id
@@ -45,7 +53,11 @@ public class Recommendation {
     @Column(columnDefinition = "json")
     private List<String> safety;
 
+
+    @CreationTimestamp
     private LocalDateTime createdAt;
+
+    @UpdateTimestamp
     private LocalDateTime updatedAt;
 
 
